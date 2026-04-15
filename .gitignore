@@ -1,0 +1,75 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+env/
+venv/
+ENV/
+.conda/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm
+.iml
+.idea/
+
+# Logs
+*.log
+logs/
+
+# TensorBoard
+tensorboard/
+*.tfevents.*
+
+# Model checkpoints (keep only best ones if needed)
+# Models/
+
+# SLT data and checkpoints
+SLT-main/Ground Truth/
+SLT-main/PHOENIX2014T/
+SLT-main/sign_skels_model/
+
+# Data
+Data/
+
+# Paper
+CVPR2026-FGDM.pdf
+
+# Claude
+CLAUDE.md
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+.env

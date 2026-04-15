@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0 python -m signjoey test configs/sign.yaml #--ckpt new_skels_2/1300.ckpt
