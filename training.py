@@ -455,7 +455,10 @@ class TrainManager:
             signer = csvIn[csvIn['id']==video]['signer'].item()
             gloss = csvIn[csvIn['id']==video]['annotation'].item()
             text = csvIn[csvIn['id']==video]['translation'].item()
-            seq = output_joints[i].cpu()[:,:-1]
+            # seq = output_joints[i].cpu()[:,:-1]
+            seq_full = output_joints[i].cpu()
+            valid_len = (seq_full[:, -1] > 0).sum().item()
+            seq = seq_full[:valid_len, :-1] if valid_len > 0 else seq_full[:, :-1]
             sign = torch.tensor(seq, dtype = torch.float32)
 
             dict_num = {'name': name, 'signer': signer, 'gloss': gloss, 'text': text, 'sign': sign}
