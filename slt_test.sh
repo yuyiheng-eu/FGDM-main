@@ -3,7 +3,7 @@
 # 用法：./slt_test.sh [GPU_ID] [CHECKPOINT] [OUTPUT_DIR]
 
 GPU_ID=${1:-0}
-CKPT=${2:-SLT-main/sign_skels_model/best.ckpt}
+CKPT=${2:-sign_skels_model/best.ckpt}
 OUTPUT_DIR=${3:-slt_results}
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
